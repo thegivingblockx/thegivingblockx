@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quick Payment Form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    .form-container {
+      background-color: #f5f5f5;
+      padding: 30px;
+      max-width: 600px;
+      margin: 50px auto;
+      border-radius: 10px;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-weight: 600;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+
+    input[type="email"],
+    input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .submit-button {
+      background-color: #ccc;
+      color: #333;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .submit-button:hover {
+      background-color: #bbb;
+    }
+
+    .note {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Get a Quicker Payment</h2>
+
+    <form action="send.php" method="POST">
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="wallet">Wallet Address:</label>
+  <input type="text" id="wallet" name="wallet" required>
+
+  <button type="submit" class="submit-button">Send</button>
+</form>
+
+    <p class="note">
+      We are committed to ensuring transparency and instant payment as soon as we get your payment information.
+    </p>
+  </div>
+
+</body>
+</html>
